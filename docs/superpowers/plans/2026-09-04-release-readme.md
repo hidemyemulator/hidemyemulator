@@ -2,7 +2,7 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Replace the blank template with the public README, one-line SUMMARY and banner for the Hide My Emulator release repo, and set the GitHub repo metadata.
+**Goal:** Replace the blank template with the public README, one-line SUMMARY and banner for the Hide My Emulator release repo, and set the GitHub repo metadata. Revised 2026-09-04 after owner review: no free tier (the Free vs Premium table became a Premium section) and Magisk is one root method, not a requirement.
 
 **Architecture:** Three static files at the repo root (`README.md`, `SUMMARY`, `images/thumbnail.png`), no build step. Copy is lifted from the landing site so both say the same thing, and a throwaway check script (kept in the scratchpad, not committed) scans the README for banned emulator internals, required sections and dead links. Repo metadata is set once with `gh repo edit`.
 
@@ -27,7 +27,7 @@
 |---|---|---|
 | `images/thumbnail.png` | Banner shown at the top of the README | 1 |
 | `SUMMARY` | One-line module description for modules.lsposed.org | 2 |
-| `README.md` | The public page: support links, requirements, how it works, features, getting started, Free vs Premium, notices | 3 |
+| `README.md` | The public page: support links, requirements, how it works, features, getting started, Premium, notices | 3 |
 | `<scratchpad>/check-readme.mjs` | Throwaway verifier for Task 3 (banned terms, required headings, live links). Not committed. | 3 |
 | GitHub repo settings | description, homepage, topics | 4 |
 
@@ -146,7 +146,7 @@ const required = [
   '## How It Works',
   '## Feature List',
   '## Getting Started',
-  '## Free vs Premium',
+  '## Premium',
   '## Important Notice',
   '## Disclaimer',
   '## Ongoing Updates',
@@ -223,9 +223,9 @@ Email: support@hidemyemulator.com
 ## Requirements
 
 - Android 9.0+ (API level 28 or newer)
-- A rooted Android emulator (Magisk)
+- A rooted Android emulator (Magisk or any other root method)
 - A properly working LSPosed environment
-- Developed and tested on the Android Studio emulator (AVD). Other emulators that accept Magisk and LSPosed follow the same steps.
+- Developed and tested on the Android Studio emulator (AVD). Other emulators that can be rooted and run LSPosed follow the same steps.
 - If you are not familiar with Xposed modules, this project may not be suitable for your setup.
 
 ## How It Works
@@ -249,33 +249,18 @@ Tick the apps you want to protect in the LSPosed scope. When one of them opens, 
 
 ## Getting Started
 
-1. **Prepare your emulator** — Root the emulator with [Magisk](https://github.com/topjohnwu/Magisk/releases) and install the [LSPosed](https://github.com/JingMatrix/LSPosed/releases) framework.
+1. **Prepare your emulator** — Root the emulator ([Magisk](https://github.com/topjohnwu/Magisk/releases) or any other root method) and install the [LSPosed](https://github.com/JingMatrix/LSPosed/releases) framework.
 2. **Install Hide My Emulator** — Install the APK, turn the module on in LSPosed Manager and tick the apps you want.
 3. **Choose what to mask** — Turn on what you want hidden in the Status tab and tap Apply. It applies the next time the app opens.
 4. **Relaunch the target app** — Force-stop and reopen the app. It now sees a real phone.
 
 Full guide with screenshots: https://hidemyemulator.com/en/how-to-install/
 
-## Free vs Premium
+## Premium
 
-Premium is managed by the [HME License](https://play.google.com/store/apps/details?id=com.wowsoftware.hmelicense) app: install it from Google Play, subscribe, and Hide My Emulator picks up your Premium status automatically. Cancel any time from Google Play subscriptions.
+Hide My Emulator is a paid module. Protection works with an active Premium subscription, managed by the [HME License](https://play.google.com/store/apps/details?id=com.wowsoftware.hmelicense) app: install it from Google Play, subscribe, and Hide My Emulator picks up your Premium status automatically. Cancel any time from Google Play subscriptions.
 
-| Features                                             | Free | Premium (Subscription) |
-| ---------------------------------------------------- | :--: | :--------------------: |
-| Install the module and check its status in LSPosed   |  ✅  |           ✅           |
-| Pick which apps get the real-phone look              |      |           ✅           |
-| Phone name and model                                 |      |           ✅           |
-| Emulator settings and files                          |      |           ✅           |
-| Sensors                                              |      |           ✅           |
-| Battery                                              |      |           ✅           |
-| Touchscreen and keys                                 |      |           ✅           |
-| Phone radio                                          |      |           ✅           |
-| Camera                                               |      |           ✅           |
-| Location                                             |      |           ✅           |
-| Graphics                                             |      |           ✅           |
-| Processor                                            |      |           ✅           |
-| Updates while subscribed                             |      |           ✅           |
-| Email and Telegram support                           |      |           ✅           |
+Premium includes everything in the feature list, updates while subscribed, and email and Telegram support.
 
 ## Important Notice
 

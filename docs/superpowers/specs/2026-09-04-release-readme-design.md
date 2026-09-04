@@ -75,9 +75,9 @@ There is one language here, so sections use plain `##` headings and no language 
    in the reference.
 5. **Requirements** — bullets:
    - Android 9.0+ (API level 28 or newer)
-   - A rooted Android emulator (Magisk)
+   - A rooted Android emulator (Magisk or any other root method; Magisk is not required)
    - A working LSPosed environment
-   - Developed and tested on the Android Studio emulator; other emulators that accept Magisk and
+   - Developed and tested on the Android Studio emulator; other emulators that can be rooted and run
      LSPosed follow the same steps (from `faq.items.emulators`)
    - "If you are not familiar with Xposed modules, this project may not be suitable for your
      setup." (reference wording)
@@ -89,29 +89,14 @@ There is one language here, so sections use plain `##` headings and no language 
    gpu, cpu, profile, scope).
 8. **Getting Started** — the four `howItWorks.steps` (prepare, install, choose, relaunch) as a
    numbered list, then "Full guide with screenshots: <install guide URL>".
-9. **Free vs Premium** — intro sentence from `pricing.howItWorks` (Premium is managed by the HME
-   License app on Google Play; subscribe there, Hide My Emulator picks it up; cancel any time from
-   Google Play subscriptions). **No price.** Then a table with the reference's shape:
+9. **Premium** — there is no free tier. One paragraph: Hide My Emulator is a paid module; protection
+   works with an active Premium subscription managed by the HME License app on Google Play (install
+   it, subscribe, Hide My Emulator picks up the status, cancel any time from Google Play
+   subscriptions). Then one line: Premium includes everything in the feature list, updates while
+   subscribed, and email and Telegram support. **No price, no table.**
 
-   | Features | Free | Premium (Subscription) |
-   |---|:-:|:-:|
-   | Install the module and check its status in LSPosed | ✅ | ✅ |
-   | Pick which apps get the real-phone look | | ✅ |
-   | Phone name and model | | ✅ |
-   | Emulator settings and files | | ✅ |
-   | Sensors | | ✅ |
-   | Battery | | ✅ |
-   | Touchscreen and keys | | ✅ |
-   | Phone radio | | ✅ |
-   | Camera | | ✅ |
-   | Location | | ✅ |
-   | Graphics | | ✅ |
-   | Processor | | ✅ |
-   | Updates while subscribed | | ✅ |
-   | Email and Telegram support | | ✅ |
-
-   This is honest to the app: without a license the Status tab shows "License required" and no
-   Protection switches.
+   Revision 2026-09-04: the first draft had a Free vs Premium table copied from the reference
+   repo's shape; the owner corrected that there is no free tier, so the table was dropped.
 10. **Important Notice** — reference wording ("System-level modification always carries risk.
     Please back up your emulator image and important data before use."), with "ROM" replaced by
     "emulator image".
