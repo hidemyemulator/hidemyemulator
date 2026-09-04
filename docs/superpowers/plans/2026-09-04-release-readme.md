@@ -218,7 +218,7 @@ Apps can tell when they run in an emulator. Hide My Emulator makes them see a re
 Support: https://t.me/wowareofficial  
 Official Website: https://hidemyemulator.com  
 How to install: https://hidemyemulator.com/en/how-to-install/  
-Email: support@hidemyemulator.com
+Email: wowareofficial@gmail.com
 
 ## Requirements
 
@@ -301,7 +301,7 @@ Known acceptable outcome: if the Google Play URL for HME License returns 404, th
 - [ ] **Step 5: Confirm the two owner-unconfirmed links are the ones in the spec**
 
 Run: `grep -n 't.me/\|support@' README.md`
-Expected: `https://t.me/wowareofficial` and `support@hidemyemulator.com`, nothing else. These are the values the owner approved with the note that they may change later.
+Expected: `https://t.me/wowareofficial` and `wowareofficial@gmail.com`, nothing else. These are the values the owner approved with the note that they may change later.
 
 - [ ] **Step 6: Commit**
 

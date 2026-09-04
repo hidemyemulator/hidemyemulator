@@ -43,8 +43,8 @@ Copy comes from the landing site so both places say the same thing:
 - Reference README — section order, Important Notice / Disclaimer / Ongoing Updates /
   Feature Requests wording.
 
-Constants used in the README (values from `site.ts`, two of them still marked `TODO(owner)` on
-the landing and used as-is until the owner changes them):
+Constants used in the README (values from `site.ts`, Telegram still marked `TODO(owner)` on
+the landing and used as-is until the owner changes it):
 
 | Constant | Value | Confirmed |
 |---|---|---|
@@ -52,7 +52,7 @@ the landing and used as-is until the owner changes them):
 | Install guide | `https://hidemyemulator.com/en/how-to-install/` | yes (landing route) |
 | Releases | `https://github.com/hidemyemulator/hidemyemulator/releases/latest` | yes |
 | Telegram | `https://t.me/wowareofficial` | **owner to confirm** |
-| Support email | `support@hidemyemulator.com` | **owner to confirm** |
+| Support email | `wowareofficial@gmail.com` | confirmed by owner 2026-09-04 (landing `site.ts` still says support@hidemyemulator.com) |
 | HME License on Google Play | `https://play.google.com/store/apps/details?id=com.wowsoftware.hmelicense` | package from manifest `<queries>` |
 | Magisk | `https://github.com/topjohnwu/Magisk/releases` | yes |
 | LSPosed | `https://github.com/JingMatrix/LSPosed/releases` | landing value |

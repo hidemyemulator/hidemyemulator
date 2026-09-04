@@ -13,7 +13,7 @@ Apps can tell when they run in an emulator. Hide My Emulator makes them see a re
 Support: https://t.me/wowareofficial  
 Official Website: https://hidemyemulator.com  
 How to install: https://hidemyemulator.com/en/how-to-install/  
-Email: support@hidemyemulator.com
+Email: wowareofficial@gmail.com
 
 ## Requirements
 
